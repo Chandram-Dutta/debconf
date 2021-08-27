@@ -17,6 +17,7 @@ class InfoAndNewContainer extends StatelessWidget {
           borderRadius: BorderRadius.only(
               topRight: Radius.circular(20), topLeft: Radius.circular(20))),
       width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height - 260,
       child: Column(
         children: [
           SizedBox(
@@ -27,6 +28,14 @@ class InfoAndNewContainer extends StatelessWidget {
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.bodyText2,
           ),
+          SizedBox(
+            height: 20,
+          ),
+          Text(
+            "Earlier Editions of DebConf",
+            style: Theme.of(context).textTheme.headline2,
+          ),
+          Divider(),
         ],
       ),
     );
