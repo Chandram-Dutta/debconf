@@ -9,20 +9,22 @@ class HomePageMainColumn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          SizedBox(
-            height: 20,
-          ),
-          DebianLogo(),
-          SizedBox(
-            height: 20,
-          ),
-          InfoAndNewContainer()
-        ],
+    return SingleChildScrollView(
+      child: Container(
+        width: MediaQuery.of(context).size.width,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            DebianLogo(),
+            SizedBox(
+              height: 20,
+            ),
+            InfoAndNewContainer()
+          ],
+        ),
       ),
     );
   }
