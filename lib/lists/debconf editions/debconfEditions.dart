@@ -16,11 +16,11 @@ class DebconfEditions {
     "Cape Town, South Africa",
   ];
   List<String> debconfWebsite = [
-    "Online",
-    "Online",
-    "Curitiba, Brasil",
-    "Hsinchu, Taiwan",
-    "Montreal, Canada",
-    "Cape Town, South Africa",
+    "https://debconf21.debconf.org/",
+    "https://debconf20.debconf.org/",
+    "https://debconf19.debconf.org/",
+    "https://debconf18.debconf.org/",
+    "https://debconf17.debconf.org/",
+    "https://debconf16.debconf.org/",
   ];
 }

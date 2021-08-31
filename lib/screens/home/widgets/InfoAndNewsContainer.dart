@@ -1,5 +1,6 @@
 import 'package:DebConf/lists/debconf%20editions/debconfEditions.dart';
 import 'package:DebConf/responsive/responsive.dart';
+import 'package:DebConf/services/UrlLauncher.dart';
 import 'package:flutter/material.dart';
 
 class InfoAndNewContainer extends StatelessWidget {
@@ -41,45 +42,62 @@ class InfoAndNewContainer extends StatelessWidget {
                 : Theme.of(context).textTheme.headline3,
           ),
           Divider(
-            color: Colors.black,
+            color: Theme.of(context).primaryColor,
           ),
-          Card(
-            child: ListTile(
-              title: Text(DebconfEditions().debconfName[0]),
-              subtitle: Text(DebconfEditions().debconfLocation[0]),
-            ),
+          ListButtons(
+            listLocation: "0",
           ),
-          Card(
-            child: ListTile(
-              title: Text(DebconfEditions().debconfName[1]),
-              subtitle: Text(DebconfEditions().debconfLocation[1]),
-            ),
+          ListButtons(
+            listLocation: "1",
           ),
-          Card(
-            child: ListTile(
-              title: Text(DebconfEditions().debconfName[2]),
-              subtitle: Text(DebconfEditions().debconfLocation[2]),
-            ),
+          ListButtons(
+            listLocation: "2",
           ),
-          Card(
-            child: ListTile(
-              title: Text(DebconfEditions().debconfName[3]),
-              subtitle: Text(DebconfEditions().debconfLocation[3]),
-            ),
+          ListButtons(
+            listLocation: "3",
           ),
-          Card(
-            child: ListTile(
-              title: Text(DebconfEditions().debconfName[4]),
-              subtitle: Text(DebconfEditions().debconfLocation[4]),
-            ),
+          ListButtons(
+            listLocation: "4",
           ),
-          Card(
-            child: ListTile(
-              title: Text(DebconfEditions().debconfName[5]),
-              subtitle: Text(DebconfEditions().debconfLocation[5]),
-            ),
+          ListButtons(
+            listLocation: "5",
           ),
         ],
+      ),
+    );
+  }
+}
+
+class ListButtons extends StatelessWidget {
+  const ListButtons({
+    @required this.listLocation,
+    Key? key,
+  }) : super(key: key);
+
+  final String? listLocation;
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: ListTile(
+        title: Text(
+            DebconfEditions().debconfName[int.parse(listLocation.toString())]),
+        subtitle: Text(DebconfEditions()
+            .debconfLocation[int.parse(listLocation.toString())]),
+        trailing: ElevatedButton(
+          child: Text(
+            "Visit Website",
+            style: TextStyle(color: Theme.of(context).primaryColor),
+          ),
+          onPressed: () {
+            launchUrl(DebconfEditions()
+                .debconfWebsite[int.parse(listLocation.toString())]);
+          },
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all<Color>(
+                Theme.of(context).backgroundColor),
+          ),
+        ),
       ),
     );
   }
