@@ -1,4 +1,3 @@
-import 'package:DebConf/navBar/BottomNavBar.dart';
 import 'package:DebConf/screens/home/widgets/HomePageMainColumn.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +12,6 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
       ),
       body: HomePageMainColumn(),
-      bottomNavigationBar: BotttomNavBar(),
     );
   }
 }
