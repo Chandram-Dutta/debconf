@@ -20,9 +20,15 @@ class HomePageMainColumn extends StatelessWidget {
             ),
             DebianLogo(),
             SizedBox(
+              height: 20,
+            ),
+            SizedBox(
               width: MediaQuery.of(context).size.width * 0.5,
               child: ElevatedButton(
-                style: ButtonStyle(),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all<Color>(
+                      Theme.of(context).accentColor),
+                ),
                 onPressed: () {
                   Navigator.pushNamed(context, '/schedule');
                 },
