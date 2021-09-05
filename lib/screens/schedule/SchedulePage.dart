@@ -1,3 +1,4 @@
+import 'package:DebConf/schedule/Day1.dart';
 import 'package:flutter/material.dart';
 
 class SchedulePage extends StatelessWidget {
@@ -8,50 +9,40 @@ class SchedulePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("DebConf Schedule"),
-        actions: [
-          DaySelect(),
-          SizedBox(
-            width: 15,
-          )
-        ],
       ),
+      body: Day1List(),
     );
   }
 }
 
-class DaySelect extends StatefulWidget {
-  const DaySelect({
+class Day1List extends StatelessWidget {
+  Day1List({
     Key? key,
   }) : super(key: key);
 
-  @override
-  _DaySelect createState() => _DaySelect();
-}
-
-class _DaySelect extends State<DaySelect> {
-  var _languages = ["1", "2", "3", "4", "5"];
-  var _currentItem = "1";
+  final List title = Day1().title;
+  final List speaker = Day1().speaker;
+  final List time = Day1().time;
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Text("Day"),
-        SizedBox(width: 10),
-        DropdownButton<String>(
-          items: _languages.map((String dropDownStringItem) {
-            return DropdownMenuItem<String>(
-              value: dropDownStringItem,
-              child: Text(dropDownStringItem),
-            );
-          }).toList(),
-          onChanged: (var newValue) {
-            setState(() {
-              this._currentItem = newValue.toString();
-            });
-          },
-          value: _currentItem,
-        ),
-      ],
+    return ListView.builder(
+      itemCount: title.length,
+      itemBuilder: (context, index) {
+        return Card(
+          child: ListTile(
+            leading: Container(
+              height: MediaQuery.of(context).size.height,
+              width: 150,
+              child: Card(
+                child: Center(child: Text(time[index])),
+                color: Theme.of(context).backgroundColor,
+              ),
+            ),
+            title: Text(title[index]),
+            subtitle: Text(speaker[index]),
+          ),
+        );
+      },
     );
   }
 }
