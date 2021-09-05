@@ -1,5 +1,6 @@
 import 'package:DebConf/responsive/responsive.dart';
 import 'package:flutter/material.dart';
+import 'package:rive/rive.dart';
 
 class DebianLogo extends StatelessWidget {
   const DebianLogo({
@@ -11,7 +12,11 @@ class DebianLogo extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Image.asset("assets/debianLogo.png"),
+        SizedBox(
+          child: RiveAnimation.asset("assets/debian.riv"),
+          height: 200,
+          width: 200,
+        ),
         SizedBox(
           width: 10,
         ),

@@ -1,6 +1,7 @@
 import 'package:DebConf/licenseconst.dart';
 import 'package:DebConf/screens/home/widgets/HomePageMainColumn.dart';
 import 'package:flutter/material.dart';
+import "package:rive/rive.dart";
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -19,7 +20,7 @@ class HomePage extends StatelessWidget {
                 applicationIcon: SizedBox(
                   height: 64,
                   width: 64,
-                  child: Image.asset("assets/debianLogo.png"),
+                  child: RiveAnimation.asset("assets/debian.riv"),
                 ),
               );
             },
