@@ -26,6 +26,7 @@ dependencies:
   flutter:
     sdk: flutter
   rive: ^0.7.22
+  syncfusion_flutter_calendar: ^19.2.62
   url_launcher: ^6.0.9
 
 dev_dependencies:
