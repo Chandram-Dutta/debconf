@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 
 class DefaultTheme {
@@ -6,6 +8,8 @@ class DefaultTheme {
     brightness: Brightness.light,
     primaryColor: Colors.white,
     accentColor: Colors.red[900],
+    appBarTheme:
+        AppBarTheme(color: Colors.white, foregroundColor: Colors.black),
     backgroundColor: Colors.grey[900],
     textTheme: const TextTheme(
       headline1: TextStyle(fontSize: 72, fontWeight: FontWeight.bold),
@@ -22,6 +26,8 @@ class DefaultTheme {
     scaffoldBackgroundColor: Colors.grey[900],
     brightness: Brightness.dark,
     primaryColor: Colors.grey[900],
+    appBarTheme:
+        AppBarTheme(color: Colors.grey[900], foregroundColor: Colors.white),
     accentColor: Colors.red[900],
     backgroundColor: Colors.white,
     textTheme: const TextTheme(
