@@ -95,7 +95,7 @@ class _SchedulePageState extends State<SchedulePage> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        title: Text("Lorem ipsum Schedule"),
+        title: Text("DebConf Schedule"),
       ),
       body: SfCalendar(
         view: CalendarView.week,
