@@ -12,6 +12,7 @@ class HomePageMainColumn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
+      physics: BouncingScrollPhysics(),
       child: Container(
         width: MediaQuery.of(context).size.width,
         child: Column(
