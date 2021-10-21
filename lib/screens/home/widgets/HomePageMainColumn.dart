@@ -50,7 +50,7 @@ class HomePageMainColumn extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
-            InfoAndNewContainer()
+            InfoAndNewContainer(),
           ],
         ),
       ),

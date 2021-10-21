@@ -26,10 +26,13 @@ class InfoAndNewContainer extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-          Text(
-            debConfIntro,
-            textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.bodyText2,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 5),
+            child: Text(
+              debConfIntro,
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.bodyText2,
+            ),
           ),
           SizedBox(
             height: 20,
@@ -61,6 +64,9 @@ class InfoAndNewContainer extends StatelessWidget {
           ),
           ListButtons(
             listLocation: "5",
+          ),
+          SizedBox(
+            height: 40,
           ),
         ],
       ),
