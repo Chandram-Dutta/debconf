@@ -65,6 +65,9 @@ class InfoAndNewContainer extends StatelessWidget {
           ListButtons(
             listLocation: "5",
           ),
+          ListButtons(
+            listLocation: "6",
+          ),
           SizedBox(
             height: 40,
           ),

@@ -4,45 +4,68 @@ import 'package:syncfusion_flutter_calendar/calendar.dart';
 List<Appointment> getAppointment(BuildContext context) {
   List<Appointment> meeting = <Appointment>[
     Appointment(
-        startTime: DateTime(2021, 8, 24, 12, 45, 0),
-        endTime: DateTime(2021, 8, 24, 13, 0, 0),
-        subject: "DebConf21 Opening",
-        notes: "https://debconf21.debconf.org/talks/108-debconf21-opening/",
+        startTime: DateTime(2022, 7, 17, 8, 00, 0),
+        endTime: DateTime(2022, 7, 17, 22, 00, 0),
+        subject: "First day of DebConf / opening",
+        notes: "https://debconf22.debconf.org/schedule/important-dates/",
         color: Theme.of(context).colorScheme.secondary,
-        location: "Online"),
+        location: "The Innovation & Training Park (ITP)"),
     Appointment(
-        startTime: DateTime(2021, 8, 24, 13, 0, 0),
-        endTime: DateTime(2021, 8, 24, 13, 45, 0),
-        subject:
-            "OpenStack Cluster Installer in Bullseye: what's new, what to expect",
-        notes:
-            "https://debconf21.debconf.org/talks/26-openstack-cluster-installer-in-bullseye-whats-new-what-to-expect/",
+        startTime: DateTime(2022, 7, 18, 8, 00, 0),
+        endTime: DateTime(2022, 7, 18, 22, 00, 0),
+        subject: "Second day of DebConf",
+        notes: "https://debconf22.debconf.org/schedule/important-dates/",
         color: Theme.of(context).colorScheme.secondary,
-        location: "Online"),
+        location: "The Innovation & Training Park (ITP)"),
     Appointment(
-        startTime: DateTime(2021, 8, 24, 14, 00, 0),
-        endTime: DateTime(2021, 8, 24, 14, 45, 0),
-        subject:
-            "branch2repo -- enabling casual contributions to debian-installer",
-        notes:
-            "https://debconf21.debconf.org/talks/30-branch2repo-enabling-casual-contributions-to-debian-installer/",
+        startTime: DateTime(2022, 7, 19, 8, 00, 0),
+        endTime: DateTime(2022, 7, 19, 22, 00, 0),
+        subject: "Third day of DebConf",
+        notes: "https://debconf22.debconf.org/schedule/important-dates/",
         color: Theme.of(context).colorScheme.secondary,
-        location: "Online"),
+        location: "The Innovation & Training Park (ITP)"),
     Appointment(
-        startTime: DateTime(2021, 8, 24, 14, 00, 0),
-        endTime: DateTime(2021, 8, 24, 14, 45, 0),
-        subject:
-            "బాల స్వేచ్ఛ ప్రాజెక్టు - కంప్యూటర్ ఆధారిత విద్యలో ఒక కొత్త ఒరవడి",
-        notes: "https://debconf21.debconf.org/talks/61--/",
+        startTime: DateTime(2022, 7, 20, 8, 00, 0),
+        endTime: DateTime(2022, 7, 20, 22, 00, 0),
+        subject: "Fourth day of DebConf",
+        notes: "https://debconf22.debconf.org/schedule/important-dates/",
         color: Theme.of(context).colorScheme.secondary,
-        location: "Online"),
+        location: "The Innovation & Training Park (ITP)"),
     Appointment(
-        startTime: DateTime(2021, 8, 24, 15, 00, 0),
-        endTime: DateTime(2021, 8, 24, 15, 20, 0),
-        subject: "	వాడుక లో డెబియన్ మెడ్! (Debian Med in Use)",
-        notes: "https://debconf21.debconf.org/talks/108-debconf21-opening/",
+        startTime: DateTime(2022, 7, 21, 8, 00, 0),
+        endTime: DateTime(2022, 7, 21, 22, 00, 0),
+        subject: "Fifth day of DebConf",
+        notes: "https://debconf22.debconf.org/schedule/important-dates/",
         color: Theme.of(context).colorScheme.secondary,
-        location: "Online"),
+        location: "The Innovation & Training Park (ITP)"),
+    Appointment(
+        startTime: DateTime(2022, 7, 22, 8, 00, 0),
+        endTime: DateTime(2022, 7, 22, 22, 00, 0),
+        subject: "Sixth day of DebConf",
+        notes: "https://debconf22.debconf.org/schedule/important-dates/",
+        color: Theme.of(context).colorScheme.secondary,
+        location: "The Innovation & Training Park (ITP)"),
+    Appointment(
+        startTime: DateTime(2022, 7, 23, 8, 00, 0),
+        endTime: DateTime(2022, 7, 23, 22, 00, 0),
+        subject: "Seventh day of DebConf",
+        notes: "https://debconf22.debconf.org/schedule/important-dates/",
+        color: Theme.of(context).colorScheme.secondary,
+        location: "The Innovation & Training Park (ITP)"),
+    Appointment(
+        startTime: DateTime(2022, 7, 24, 8, 00, 0),
+        endTime: DateTime(2022, 7, 24, 22, 00, 0),
+        subject: "Last day of DebConf / closing ceremony / teardown",
+        notes: "https://debconf22.debconf.org/schedule/important-dates/",
+        color: Theme.of(context).colorScheme.secondary,
+        location: "The Innovation & Training Park (ITP)"),
+    Appointment(
+        startTime: DateTime(2022, 7, 25, 8, 00, 0),
+        endTime: DateTime(2022, 7, 25, 22, 00, 0),
+        subject: "Departure day",
+        notes: "https://debconf22.debconf.org/schedule/important-dates/",
+        color: Theme.of(context).colorScheme.secondary,
+        location: "The Innovation & Training Park (ITP)"),
   ];
 
   return meeting;

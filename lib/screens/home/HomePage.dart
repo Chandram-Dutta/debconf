@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
               showAboutDialog(
                 context: context,
                 applicationLegalese: mitLicense,
-                applicationVersion: "2021.0.1",
+                applicationVersion: "2022.0.1",
                 applicationIcon: SizedBox(
                   height: 64,
                   width: 64,

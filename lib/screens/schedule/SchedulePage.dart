@@ -95,7 +95,9 @@ class _SchedulePageState extends State<SchedulePage> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        title: Text("DebConf Schedule"),
+        title: Text(
+          "Schedule",
+        ),
       ),
       body: SfCalendar(
         view: CalendarView.schedule,
@@ -103,7 +105,7 @@ class _SchedulePageState extends State<SchedulePage> {
           appointmentItemHeight: 100,
         ),
         dataSource: MeetingDataSource(getAppointment(context)),
-        initialDisplayDate: DateTime(2021, 8, 24),
+        initialDisplayDate: DateTime(2022, 7, 17),
         selectionDecoration: BoxDecoration(
           color: Colors.transparent,
           border: Border.all(color: Colors.red, width: 2),
