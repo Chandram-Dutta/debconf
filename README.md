@@ -1,4 +1,4 @@
-# debconf
+# Debconf
 
 A Flutter Projet for schedules, news and information for DebConf.
 
